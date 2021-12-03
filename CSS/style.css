@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+:root{
+    --main-bg-color: #2874f0;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+/* html{
+    scroll-behavior: smooth;
+} */
+header{
+    background: var(--main-bg-color);
+    /* border: 2px solid red; */
+    font-family: "Lato", sans-serif;
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 88px;
+    padding: 0 25px;
+}
+
+nav ul{
+    height: 7vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+nav ul li{
+    list-style: none;
+    padding: 0 13px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    /* color: rgb(112, 204, 112); */
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+
+}
+.search input{
+    width: 30vw;
+    height: 23px;
+    border-radius: 5px;
+    /* margin-right: 10px;
+    margin-left: 40px; */
+    border: 1px solid black;
+    padding-left: 10px;
+    /* margin: 0 10 0 100px;*/
+}
+.search button{
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    /* padding-left: 5px; */
+}
+.cart-img{
+    height: 4vh;
+    width: 4vw;
+}
+.slider{ 
+    overflow: hidden;
+    margin: 10px auto;
+    width: 80vw;
+    margin-bottom: 20px;
+    
+}
+.card{
+    max-width: 90vw;
+    margin: 37px auto;
+    /* background-color: brown; */
+    border: 2px solid black;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+/* .card h2{
+    font-family: "Lato", sans-serif;
+} */
+
+/* .cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: ;
+
+} */
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 12px;
+}
+.card-item:hover{
+    color: white;
+    background-color: gray;
+}
+.card-item img:hover{
+    cursor: pointer;
+}
+.container{
+    min-height: calc(100vh - 7vh - 7 vh);
+     /* min-height: calc(100vh - 7vh - 7vh); */
+    
+} 
+footer {
+  height: 7vh;
+  background:var(--main-bg-color);
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+
+/* button event */
+#box {
+    padding:5px;
+    width:200px;
+    z-index:10;
+    position:relative;  
+  }
+  #box form {
+   background:#006699;
+   padding:5px;
+   display:none;
+   position:absolute;
+   top:27px;
+  }
+  #button {
+    width:75px;
+    background:#006699;
+    color:#fff;
+    padding:3px 10px;
+    border:1px solid #006699;  
+    margin-bottom:15px;  
+    cursor:pointer;
+  }
+  input[type="submit"] {
+    background:none;
+    color:#fff;
+    border:none;
+    text-align:left;
+    cursor:pointer;
+  }
+  .logo{
+    margin: 10px;
+    /* display: flex; */
+    color: white;
+    text-decoration: none;
+  }
+  .logo:hover{
+      color: black;
+  }
+  .logo-flex{
+      display: flex;
+      justify-content: flex-start;
+  }
